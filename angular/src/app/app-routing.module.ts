@@ -13,7 +13,7 @@ import { PanierComponent } from "./view/components/panier/panier.component";
 import { ProductAddComponent } from "./view/components/product-add/product-add.component";
 import { ProductComponent } from "./view/components/product/product.component";
 import { ProfilComponent } from "./view/components/profil/profil.component";
-import { AdminProductComponent } from "./viex/components/admin-product/admin-product.component";
+import { AdminProductComponent } from "./view/components/admin-product/admin-product.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent, canActivate: [DataUserGuard] },

@@ -29,7 +29,7 @@ import { ProductComponent } from "./view/components/product/product.component";
 import { ProductAddComponent } from "./view/components/product-add/product-add.component";
 import { ProductModifComponent } from "./product-modif/product-modif.component";
 import { AdminPowerComponent } from "./view/components/admin-power/admin-power.component";
-import { AdminProductComponent } from "./viex/components/admin-product/admin-product.component";
+import { AdminProductComponent } from "./view/components/admin-product/admin-product.component";
 
 @NgModule({
   declarations: [
