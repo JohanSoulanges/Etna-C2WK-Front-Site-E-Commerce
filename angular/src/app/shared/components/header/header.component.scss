@@ -1,0 +1,32 @@
+nav {
+    min-height: 10vh;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+ul {
+
+    li {
+        display: inline-block;
+
+        &:hover {
+            color: var(--accent);
+        }
+
+        transition: color 0.4s ease;
+    }
+}
+
+.active {
+    color: red;
+    font-weight: 500;
+  }

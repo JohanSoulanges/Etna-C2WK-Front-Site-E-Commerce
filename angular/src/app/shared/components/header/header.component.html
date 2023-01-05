@@ -1,0 +1,48 @@
+<nav class="header">
+  <a routerLink="/" class="logo p-20"> Logo</a>
+  <ul *ngIf="!user">
+    <li class="m-10">
+      <button
+        mat-raised-button
+        routerLink="/auth/login"
+        routerLinkActive="active"
+      >
+        Login
+      </button>
+    </li>
+    <li class="m-10">
+      <button
+        mat-raised-button
+        routerLink="/auth/signin"
+        routerLinkActive="active"
+      >
+        Signin
+      </button>
+    </li>
+    <!-- <li><a routerLink="/auth/login"  routerLinkActive="active" class="p-20">Login</a></li>
+    <li><a routerLink="/auth/signin" routerLinkActive="active" class="p-20">Signin</a></li> -->
+  </ul>
+  <div *ngIf="user">
+    <ul>
+      <li class="p-10">
+        <button mat-raised-button routerLink="/" >Main</button>
+      </li>
+      <li class="p-10">
+        <button mat-raised-button routerLink="/profil" >
+          Profil
+        </button>
+      </li>
+      <li class="p-10">
+        <button
+          mat-raised-button
+          style="cursor: pointer"
+          user="user"
+          (click)="logout.emit(true)"
+          
+        >
+          Logout
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

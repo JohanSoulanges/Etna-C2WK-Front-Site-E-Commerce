@@ -1,0 +1,26 @@
+<div class="flex-box">
+  <div class="container">
+    <div class="profil-img">
+      <img src="https://picsum.photos/200/300" alt="image tempo" />
+    </div>
+    <div class="detail">
+      <h2>Email :</h2>
+      <p>Lorem ipsum dolor</p>
+      <h2>Nom de Profil :</h2>
+      <p>Lorem, ipsum.</p>
+      <h2>Genre :</h2>
+      <p>Lorem.</p>
+    </div>
+    <div class="product-img">
+      <img src="https://picsum.photos/200/300" alt="image tempo" />
+      <img src="https://picsum.photos/200/300" alt="image tempo" />
+      <img src="https://picsum.photos/200/300" alt="image tempo" />
+    </div>
+    <div class="btn-admin">
+      <button mat-raised-button *ngIf="isAdmin" (click)="changeAdmin()">
+        Admin Power
+      </button>
+      <button mat-raised-button (click)="change()">Change Info</button>
+    </div>
+  </div>
+</div>

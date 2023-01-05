@@ -1,0 +1,16 @@
+.container {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    div{
+        display: flex;
+        flex-direction: column;
+        *{
+            margin: 5px
+        }
+    }
+}

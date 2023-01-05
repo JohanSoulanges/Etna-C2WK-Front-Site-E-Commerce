@@ -1,0 +1,27 @@
+<div class="product">
+  <div>
+    <h2 class="title">{{detail?.name}}</h2>
+    <p class="price">{{detail?.price}} euros</p>
+    <img src="https://picsum.photos/200/300" alt="Image du produit" />
+    <p>{{detail?.description}}</p>
+  </div>
+  <button mat-raised-button class="btn" (click)="panier()">
+    Ajouter au panier
+  </button>
+  <button
+    mat-raised-button
+    *ngIf="user?.isAdmin && user?._id === detail?.userId"
+    (click)="modif()"
+    mat-dialog-close
+  >
+    Modifier
+  </button>
+  <button
+    mat-raised-button
+    *ngIf="user?.isAdmin && user?._id === detail?.userId"
+    (click)="delet()"
+    mat-dialog-close
+  >
+    Supprimer
+  </button>
+</div>

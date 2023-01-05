@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="_vngDLqTinRNDJ-WFZXq" name="Page-1">
+        <mxGraphModel dx="1358" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="160" width="740" height="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Header" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="190" width="720" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Footer" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="790" width="720" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Product" style="whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="390" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Product" style="whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="390" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Product" style="whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="390" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Product" style="whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="540" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Product" style="whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0000CC;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="540" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Panier" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#00CC00;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="700" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Add product or Check own product" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="700" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Filter and Search Product" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000CC;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="310" width="630" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

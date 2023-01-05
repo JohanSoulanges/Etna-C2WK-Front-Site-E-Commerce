@@ -1,0 +1,51 @@
+.container {
+    height: 90vh;
+    display: grid;
+    grid-template-areas: 
+        "a b c d "
+        "e f g h ";
+}
+
+.liste {
+    border: 1px solid black;
+    background-color: red;
+    max-width: 22vw;
+    max-height: 35vh;
+    margin: 15px;
+}
+
+.grid-a {
+    grid-area: a;
+}
+
+.grid-b {
+    grid-area: b;
+}
+
+.grid-c {
+    grid-area: c;
+}
+
+.grid-d {
+    grid-area: d;
+}
+
+.grid-e {
+    grid-area: e;
+}
+
+.grid-f {
+    grid-area: f;
+}
+
+.grid-g {
+    grid-area: g;
+}
+
+.grid-h {
+    grid-area: h;
+}
+
+.grid-i {
+    grid-area: i;
+}

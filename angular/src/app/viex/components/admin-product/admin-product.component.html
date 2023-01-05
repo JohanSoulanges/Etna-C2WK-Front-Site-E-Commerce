@@ -1,0 +1,15 @@
+<div>
+    <mat-card *ngFor="let product of products">
+        <mat-card-header>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+        <mat-card-subtitle>{{ product.price }} €</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+        <p>{{ product.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+        <button mat-raised-button (click)="modifyProduct(product)">Modifier</button>
+        <button mat-raised-button (click)="deleteProduct(product)">Delete</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

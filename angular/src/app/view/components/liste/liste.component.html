@@ -1,0 +1,8 @@
+<div class="product">
+  <div (click)="openDetail(id)" style="cursor: pointer">
+    <h2 class="title">{{products?.name}}</h2>
+    <p class="price">{{products?.price}} euros</p>
+    <img src="https://picsum.photos/200/300" alt="Image du produit" />
+  </div>
+  <button mat-raised-button class="btn" (click)="addPanier()">Ajouter au panier</button>
+</div>

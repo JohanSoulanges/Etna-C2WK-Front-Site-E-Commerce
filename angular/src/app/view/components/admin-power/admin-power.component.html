@@ -1,0 +1,12 @@
+<div *ngFor="let user of users$">
+  <p>Email: {{ user.email }}</p>
+  <p>Nom de d'utilisateur: {{ user.username }}</p>
+  <p>Date d'inscription: {{ user.date | date :'medium' }}</p>
+  <p *ngIf="user.isAdmin === 0">Status: Client</p>
+  <p *ngIf="user.isAdmin === 1">Status: Vendeur</p>
+  <p *ngIf="user.isAdmin === 2">Status: Admin</p>
+
+  <button mat-raised-button (click)="modifyUser(user)">Modifier</button>
+  <button mat-raised-button (click)="deleteUser(user._id)">Delete</button>
+  <button mat-raised-button (click)="productUser(user._id)">Product</button>
+</div>

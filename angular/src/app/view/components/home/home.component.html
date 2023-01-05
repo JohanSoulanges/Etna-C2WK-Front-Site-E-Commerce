@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="filter">
+    <form (keyup.enter)="onSubmit()" [formGroup]="form">
+      <mat-form-field>
+        <label for="filter">Barre de Recherche</label>
+        <input
+          matInput
+          formControlName="filter"
+          type="text"
+          name="filter"
+          [(ngModel)]="form.value.filter"
+        />
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="show">
+    <app-liste *ngFor="let products of bestProducts, let index = index" [products]="products" class="liste"></app-liste>
+  </div>
+  <button *ngIf="user" mat-raised-button routerLink="products">Own Product</button>
+  <button *ngIf="user" mat-raised-button (click)="panier()">Panier</button>
+</div>

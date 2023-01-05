@@ -1,0 +1,53 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div>
+      <mat-form-field>
+        <label for="email">Email</label>
+        <input
+          matInput
+          formControlName="email"
+          type="email"
+          name="email"
+          id="email"
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <label for="username">Username</label>
+        <input
+          matInput
+          formControlName="username"
+          type="text"
+          name="username"
+          id="username"
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field flaotPlaceholder="always" hintLabel="Minimun 8 caractères">
+        <label for="password">Password</label>
+        <input
+          matInput
+          formControlName="password"
+          type="password"
+          name="password"
+          id="password"
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <legend>Genre</legend>
+        <mat-select formControlName="genre">
+          <mat-option *ngFor="let genre of genres" [value]="genre.value">
+            {{ genre.label }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-raised-button type="submit">Signin</button>
+    </div>
+  </form>
+</div>
