@@ -47,6 +47,6 @@ export class ListeComponent implements OnInit {
 
   public addPanier(): void {
     console.log("ajouter panier");
-    this.panierService.confirmationAddPanier();
+    this.panierService.confirmationAddPanier(this.id);
   }
 }

@@ -2,8 +2,8 @@ import { formatCurrency } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup } from "@angular/forms";
 import { ActivatedRoute } from "@angular/router";
-import { Product } from "../shared/models/product.model";
-import { ProductService } from "../shared/services/product.service";
+import { Product } from "./../../../shared/models/product.model";
+import { ProductService } from "./../../../shared/services/product.service";
 
 @Component({
   selector: "app-product-modif",

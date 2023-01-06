@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { ProductModifComponent } from "./product-modif/product-modif.component";
+import { ProductModifComponent } from "./view/components/product-modif/product-modif.component";
 import { AdminGuard } from "./shared/guards/admin.guard";
 import { AuthGuard } from "./shared/guards/auth.guard";
 import { DataUserGuard } from "./shared/guards/data-user.guard";
