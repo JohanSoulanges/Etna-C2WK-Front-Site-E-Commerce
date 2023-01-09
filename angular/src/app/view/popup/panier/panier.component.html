@@ -1,6 +1,10 @@
 <div>
-  <div *ngFor="let item of panier?.products">
-    <div>{{ item.productId }}</div>
-    <div>{{ item.price }}</div>
-  </div>
+  <mat-card *ngFor="let item of items">
+    <mat-card-content>{{ item.name }}</mat-card-content>
+    <mat-card-content>{{ item.price }}</mat-card-content>
+    <mat-card-content>{{ item.img }}</mat-card-content>
+  </mat-card>
+
+  <button mat-raised-button (click)="detail()" mat-dialog-close>Details</button>
+  <button mat-raised-button mat-dialog-close>Confirmation</button>
 </div>

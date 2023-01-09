@@ -3,12 +3,11 @@ export interface Panier {
   idUser: string;
   products: [
     {
-      productId: string;
+      productsId: string;
       quantity: number;
       price: number;
     }
   ];
   date: Date;
-  totalPrice: number;
   status: number;
 }

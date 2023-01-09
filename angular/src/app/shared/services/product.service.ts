@@ -12,6 +12,9 @@ export class ProductService {
   >(null);
   public detail: BehaviorSubject<Product | null> =
     new BehaviorSubject<Product | null>(null);
+  public items: BehaviorSubject<Product[] | null> = new BehaviorSubject<
+    Product[] | null
+  >(null);
 
   public DB: String = "http://localhost:3000";
 
@@ -109,6 +112,16 @@ export class ProductService {
 
     return this.http.delete<Product>(this.DB + "/products", {
       params: { id: product._id },
+    });
+  }
+
+  public getPanier(arrayPanier: any) {
+    console.log("getPanier");
+
+    return this.http.get(this.DB + "/products/array", {
+      params: { array: arrayPanier },
+    }).subscribe((products: any) => {
+      this.items.next(products);
     });
   }
 }

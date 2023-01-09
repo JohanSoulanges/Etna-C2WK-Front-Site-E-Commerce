@@ -30,6 +30,7 @@ import { ProductAddComponent } from "./view/components/product-add/product-add.c
 import { ProductModifComponent } from "./view/components/product-modif/product-modif.component";
 import { AdminPowerComponent } from "./view/components/admin-power/admin-power.component";
 import { AdminProductComponent } from "./view/components/admin-product/admin-product.component";
+import { PanierDetailComponent } from './view/components/panier-detail/panier-detail.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { AdminProductComponent } from "./view/components/admin-product/admin-pro
     ProductModifComponent,
     AdminPowerComponent,
     AdminProductComponent,
+    PanierDetailComponent,
   ],
   imports: [
     BrowserModule,

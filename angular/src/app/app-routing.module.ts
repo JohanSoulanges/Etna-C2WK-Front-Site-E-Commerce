@@ -14,6 +14,7 @@ import { ProductAddComponent } from "./view/components/product-add/product-add.c
 import { ProductComponent } from "./view/components/product/product.component";
 import { ProfilComponent } from "./view/components/profil/profil.component";
 import { AdminProductComponent } from "./view/components/admin-product/admin-product.component";
+import { PanierDetailComponent } from "./view/components/panier-detail/panier-detail.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent, canActivate: [DataUserGuard] },
@@ -61,6 +62,11 @@ const routes: Routes = [
     path: "adminProduct",
     component: AdminProductComponent,
     canActivate: [DataUserGuard, AuthGuard, AdminGuard],
+  },
+  {
+    path: "panierDetail",
+    component: PanierDetailComponent,
+    canActivate: [DataUserGuard, AuthGuard],
   },
 ];
 

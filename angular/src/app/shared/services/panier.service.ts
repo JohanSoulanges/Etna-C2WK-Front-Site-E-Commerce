@@ -44,7 +44,6 @@ export class PanierService {
   public getPanier(): void {
     console.log("getPanier");
     this.http.get(this.DB + "panier/").subscribe((panier: any) => {
-      console.log(panier);
       this.panier.next(panier);
     });
   }
