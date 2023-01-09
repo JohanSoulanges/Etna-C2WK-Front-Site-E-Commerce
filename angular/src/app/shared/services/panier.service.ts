@@ -2,7 +2,6 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { MatDialog } from "@angular/material/dialog";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { Router } from "@angular/router";
 import { BehaviorSubject } from "rxjs";
 import { PanierComponent } from "../../view/popup/panier/panier.component";
 import { Panier } from "../models/panier.models";
@@ -30,12 +29,12 @@ export class PanierService {
     const dialogRef = this.dialog.open(PanierComponent);
   }
 
-  public confirmationAddPanier(target: string): void {
+  public confirmationAddPanier(target: string, price: number): void {
     console.log("confirmationAddPanier");
     this.http
-      .post(this.DB + "panier/add", { productId: target })
+      .post(this.DB + "panier/add", { productId: target, price: price })
       .subscribe((res) => {
-        console.log(res);
+        console.log("res",res);
       });
     this.snackBar.open("Produit ajouté au panier", "Fermer", {
       duration: 2000,

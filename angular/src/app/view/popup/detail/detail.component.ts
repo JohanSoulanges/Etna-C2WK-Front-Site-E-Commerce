@@ -28,7 +28,7 @@ export class DetailComponent implements OnInit {
       // Get user from service
       this.user = user;
     });
-    console.log("detail Data",this.data);
+    // console.log("detail Data",this.data);
     
     this.productService.getProducts(this.data);
     this.productService.detail.subscribe((detail) => {
@@ -40,7 +40,7 @@ export class DetailComponent implements OnInit {
 
   public panier(): void {
     console.log("ajouter panier");
-    // this.panierService.confirmationAddPanier();
+    this.panierService.confirmationAddPanier(this.detail!._id, this.detail!.price);
   }
 
   public modif(): void {
@@ -64,7 +64,5 @@ export class DetailComponent implements OnInit {
     this.productService.deleteProduct(this.detail!).subscribe((product: any) => {
       console.log("product", product);
     });
-
-    
   }
 }

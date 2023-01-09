@@ -1,11 +1,14 @@
 export interface Panier {
-    _id: string;
-    productId: [
-        {
-            productId: string;
-            quantity: number;
-        }
-    ];
-    date: Date;
-    status: number;
+  _id: string;
+  idUser: string;
+  products: [
+    {
+      productId: string;
+      quantity: number;
+      price: number;
+    }
+  ];
+  date: Date;
+  totalPrice: number;
+  status: number;
 }

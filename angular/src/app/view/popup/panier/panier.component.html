@@ -1,1 +1,6 @@
-<p>panier works!</p>
+<div>
+  <div *ngFor="let item of panier?.products">
+    <div>{{ item.productId }}</div>
+    <div>{{ item.price }}</div>
+  </div>
+</div>

@@ -45,8 +45,8 @@ export class ListeComponent implements OnInit {
     });
   }
 
-  public addPanier(): void {
-    console.log("ajouter panier");
-    this.panierService.confirmationAddPanier(this.id);
+  public addPanier(id: string): void {
+    console.log("ajouter panier", id);
+    this.panierService.confirmationAddPanier(id, this.products!.price);
   }
 }

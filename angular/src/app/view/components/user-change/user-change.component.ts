@@ -23,7 +23,7 @@ export class UserChangeComponent implements OnInit {
   public form: FormGroup = new FormGroup({});
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data:{ user: User},
+    @Inject(MAT_DIALOG_DATA) public data:{ user: User },
     private authService: AuthService,
     private userChangeService: UserChangeService,
     public dialogRef: MatDialogRef<UserChangeComponent>

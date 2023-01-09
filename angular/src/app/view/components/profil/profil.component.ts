@@ -22,7 +22,6 @@ export class ProfilComponent implements OnInit {
     this.authService.isAdmin$.subscribe((isAdmin) => {
       this.isAdmin = isAdmin;
     });
-
   }
 
   ngOnInit(): void {}
@@ -30,8 +29,12 @@ export class ProfilComponent implements OnInit {
   public change(): void {
     console.log("change modal");
 
-    const dialogRef: MatDialogRef<UserChangeComponent> =
-      this.dialog.open(UserChangeComponent);
+    const dialogRef: MatDialogRef<UserChangeComponent> = this.dialog.open(
+      UserChangeComponent,
+      {
+        data: {},
+      }
+    );
 
     dialogRef.afterClosed().subscribe((result) => {
       console.log("The dialog was closed", result);
